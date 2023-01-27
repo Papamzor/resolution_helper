@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="INSERT_OR_UPDATE">
+        <configuration_template/>
+        <connection_type>http_connection</connection_type>
+        <id>x_417399_resolutio.OpenAI_Credential_Alias</id>
+        <multiple_connections>false</multiple_connections>
+        <name>OpenAI Credential Alias</name>
+        <parent/>
+        <retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-27 15:55:47</sys_created_on>
+        <sys_id>b054cd972f60ad501cfed4a72799b631</sys_id>
+        <sys_name>x_417399_resolutio.OpenAI_Credential_Alias</sys_name>
+        <sys_package display_value="Resolution Helper" source="x_417399_resolutio">99357b362fe0e9501cfed4a72799b69c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resolution Helper">99357b362fe0e9501cfed4a72799b69c</sys_scope>
+        <sys_update_name>sys_alias_b054cd972f60ad501cfed4a72799b631</sys_update_name>
+        <type>credential</type>
+    </sys_alias>
+</record_update>
