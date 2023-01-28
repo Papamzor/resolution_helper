@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action">
+    <sys_ux_form_action action="INSERT_OR_UPDATE">
+        <action_type>ui_action</action_type>
+        <active>true</active>
+        <declarative_action/>
+        <description/>
+        <name>Resolution Helper</name>
+        <specificity>20</specificity>
+        <sys_class_name>sys_ux_form_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-28 01:21:36</sys_created_on>
+        <sys_id>a0e50f5b2fe0ed501cfed4a72799b624</sys_id>
+        <sys_name>Resolution Helper</sys_name>
+        <sys_package display_value="Resolution Helper" source="x_417399_resolutio">99357b362fe0e9501cfed4a72799b69c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resolution Helper">99357b362fe0e9501cfed4a72799b69c</sys_scope>
+        <sys_update_name>sys_ux_form_action_a0e50f5b2fe0ed501cfed4a72799b624</sys_update_name>
+        <table>sn_customerservice_case</table>
+        <ui_action display_value="Resolution Helper">8e75c79b2fe0ed501cfed4a72799b676</ui_action>
+    </sys_ux_form_action>
+</record_update>

@@ -5,21 +5,21 @@
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 	try {
-		var inputs = {};
-		inputs['incident_record'] = current; // GlideRecord of table: incident 
+			var inputs = {};
+			inputs['case_record'] = current ; // GlideRecord of table: sn_customerservice_case 
 
-		// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
-		sn_fd.FlowAPI.getRunner().subflow('x_417399_resolutio.incident_resolution_helper').inBackground().withInputs(inputs).run();
-				
-		// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
-		// var result = sn_fd.FlowAPI.getRunner().subflow('x_417399_resolutio.incident_resolution_helper').inForeground().withInputs(inputs).run();
-		// var outputs = result.getOutputs();
+			// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+			sn_fd.FlowAPI.getRunner().subflow('x_417399_resolutio.case_resolution_helper').inBackground().withInputs(inputs).run();
 
-		// Current subflow has no outputs defined.		
-	} catch (ex) {
-		var message = ex.getMessage();
-		gs.error(message);
-	}
+			// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+			//var result = sn_fd.FlowAPI.getRunner().subflow('x_417399_resolutio.case_resolution_helper').inForeground().withInputs(inputs).run();
+			//var outputs = result.getOutputs();
+
+			// Current subflow has no outputs defined.		
+		} catch (ex) {
+			var message = ex.getMessage();
+			gs.error(message);
+		}
 }]]></client_script_v2>
         <comments/>
         <condition/>
@@ -30,7 +30,7 @@
         <form_link>true</form_link>
         <form_menu_button_v2>true</form_menu_button_v2>
         <form_style/>
-        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
         <hint/>
         <isolate_script>false</isolate_script>
         <list_action>false</list_action>
@@ -49,14 +49,14 @@
 	
 	try {
 		var inputs = {};
-		inputs['incident_record'] = current; // GlideRecord of table: incident 
+		inputs['case_record'] = current ; // GlideRecord of table: sn_customerservice_case 
 
 		// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
-		sn_fd.FlowAPI.getRunner().subflow('x_417399_resolutio.incident_resolution_helper').inBackground().withInputs(inputs).run();
+		sn_fd.FlowAPI.getRunner().subflow('x_417399_resolutio.case_resolution_helper').inBackground().withInputs(inputs).run();
 				
 		// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
-		// var result = sn_fd.FlowAPI.getRunner().subflow('x_417399_resolutio.incident_resolution_helper').inForeground().withInputs(inputs).run();
-		// var outputs = result.getOutputs();
+		//var result = sn_fd.FlowAPI.getRunner().subflow('x_417399_resolutio.case_resolution_helper').inForeground().withInputs(inputs).run();
+		//var outputs = result.getOutputs();
 
 		// Current subflow has no outputs defined.		
 	} catch (ex) {
@@ -71,17 +71,17 @@
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-01-27 17:17:00</sys_created_on>
+        <sys_created_on>2023-01-28 01:21:36</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>afe599532f24ad501cfed4a72799b625</sys_id>
+        <sys_id>8e75c79b2fe0ed501cfed4a72799b676</sys_id>
         <sys_name>Resolution Helper</sys_name>
         <sys_overrides/>
         <sys_package display_value="Resolution Helper" source="x_417399_resolutio">99357b362fe0e9501cfed4a72799b69c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Resolution Helper">99357b362fe0e9501cfed4a72799b69c</sys_scope>
-        <sys_update_name>sys_ui_action_afe599532f24ad501cfed4a72799b625</sys_update_name>
-        <table>incident</table>
+        <sys_update_name>sys_ui_action_8e75c79b2fe0ed501cfed4a72799b676</sys_update_name>
+        <table>sn_customerservice_case</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>
